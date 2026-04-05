@@ -1,20 +1,502 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rosaries by Anna</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rosaries by Anna — Hand-crafted with Devotion</title>
+  <meta name="description" content="Hand-crafted rosaries made with prayer and purpose, in the heart of England. By Anna — Carmelite Anna on X.">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+
+
 </head>
 <body>
-    <section class="hero">
-        <div class="hero-content">
-            <h1 class="hero-title">Rosaries by Anna</h1>
-            <p class="hero-subtitle">Hand-crafted with devotion. Made in the heart of England.</p>
+
+  <!-- ================================================
+       NAVIGATION
+  ================================================ -->
+  <header class="nav" id="site-nav" role="banner">
+    <div class="nav__inner container">
+      <a href="#home" class="nav__logo" aria-label="Rosaries by Anna — Home">
+        <img src="_assets/rosariesbyannalogowhite.png" alt="Rosaries by Anna">
+      </a>
+
+      <nav class="nav__links" aria-label="Primary navigation">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#">Blog</a>
+        <a href="#">Contact</a>
+      </nav>
+
+      <button
+        class="nav__hamburger"
+        id="hamburger"
+        aria-label="Open navigation menu"
+        aria-expanded="false"
+        aria-controls="nav-overlay"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile navigation overlay -->
+  <nav class="nav-overlay" id="nav-overlay" aria-label="Mobile navigation" aria-hidden="true">
+    <button class="nav-overlay__close" id="nav-close" aria-label="Close navigation menu">&#x2715;</button>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#">Blog</a>
+    <a href="#">Contact</a>
+  </nav>
+
+
+  <!-- ================================================
+       HERO
+  ================================================ -->
+  <section class="hero" id="home" aria-labelledby="hero-headline">
+    <div class="hero__overlay" aria-hidden="true"></div>
+    <div class="hero__content">
+      <h1 class="hero__headline" id="hero-headline">
+        Rosaries<br>by Anna
+      </h1>
+      <p class="hero__subhead">Hand Crafted in the Heart of England.</p>
+      <div class="hero__ctas">
+        <a href="#shop" class="btn btn--primary">See the collection</a>
+        <a href="#about" class="btn btn--white">About Anna</a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ================================================
+       PRODUCTS SECTION
+  ================================================ -->
+  <section class="products" id="shop" aria-label="Shop — Hand-crafted Rosaries">
+    <div class="container">
+
+      <!-- Intro row: copy left, category tiles right -->
+      <div class="products__intro-row reveal">
+
+        <!-- Left: intro copy -->
+        <div class="products__intro">
+          <span class="section-label">Handcrafted with devotion</span>
+          <h2 class="products__headline">Every Bead a Prayer,<br>Every Rosary a Gift of Grace</h2>
+          <p class="products__body">Every rosary I make begins with prayer and ends with purpose. I choose each bead by hand &#8212; for its quality, its beauty, and the intention behind it &#8212; because I believe the rosary you carry into prayer deserves to be as special as the prayers themselves.</p>
+          <p class="products__body">Whether you&#8217;re looking for a faithful daily companion, a treasured gift for a First Communion, a Confirmation, or a wedding, or simply something that reflects your own devotion &#8212; you&#8217;ll find it here.</p>
         </div>
-        <div class="hero-image">
-            <img src="../assets/images/hero.png" alt="Hand-crafted rosary">
+
+        <!-- Right: category tiles -->
+        <div class="products__cats">
+          <span class="section-label">Shop by category</span>
+          <div class="products__cats-grid">
+
+            <a href="#" class="products__cat-card" aria-label="Chaplets">
+              <div class="products__cat-img-wrap">
+                <img src="_assets/IMG_8341.png" alt="Chaplets" loading="lazy">
+              </div>
+              <span class="products__cat-label">Chaplets</span>
+            </a>
+
+            <a href="#" class="products__cat-card" aria-label="Tenners">
+              <div class="products__cat-img-wrap">
+                <img src="_assets/IMG_8346.png" alt="Tenners" loading="lazy">
+              </div>
+              <span class="products__cat-label">Tenners</span>
+            </a>
+
+            <a href="#" class="products__cat-card" aria-label="Jewellery">
+              <div class="products__cat-img-wrap">
+                <img src="_assets/IMG_8524.png" alt="Jewellery" loading="lazy">
+              </div>
+              <span class="products__cat-label">Jewellery</span>
+            </a>
+
+            <a href="#" class="products__cat-card" aria-label="Tools">
+              <div class="products__cat-img-wrap">
+                <img src="_assets/IMG_8349.png" alt="Tools" loading="lazy">
+              </div>
+              <span class="products__cat-label">Tools</span>
+            </a>
+
+          </div>
         </div>
-    </section>
+
+      </div><!-- /products__intro-row -->
+
+      <!-- Product grid -->
+      <div class="product-grid reveal">
+
+        <a href="#" class="product-card">
+          <div class="product-card__img-wrap">
+            <img src="_assets/IMG_8341.png" alt="Sterling Silver &amp; Crystal Rosary" loading="lazy">
+          </div>
+          <div class="product-card__body">
+            <h4 class="product-card__title">Sterling Silver &amp; Crystal</h4>
+            <p class="product-card__price">&#163;42.00</p>
+          </div>
+        </a>
+
+        <a href="#" class="product-card">
+          <div class="product-card__img-wrap">
+            <img src="_assets/IMG_8343.png" alt="Ocean Blue Crystal Rosary" loading="lazy">
+          </div>
+          <div class="product-card__body">
+            <h4 class="product-card__title">Ocean Blue Crystal</h4>
+            <p class="product-card__price">&#163;38.00</p>
+          </div>
+        </a>
+
+        <a href="#" class="product-card">
+          <div class="product-card__img-wrap">
+            <img src="_assets/IMG_8346.png" alt="Lilac Crystal Rosary" loading="lazy">
+          </div>
+          <div class="product-card__body">
+            <h4 class="product-card__title">Lilac Crystal</h4>
+            <p class="product-card__price">&#163;35.00</p>
+          </div>
+        </a>
+
+        <a href="#" class="product-card">
+          <div class="product-card__img-wrap">
+            <img src="_assets/IMG_8349.png" alt="Olive Wood &amp; Gold Rosary" loading="lazy">
+          </div>
+          <div class="product-card__body">
+            <h4 class="product-card__title">Olive Wood &amp; Gold</h4>
+            <p class="product-card__price">&#163;28.00</p>
+          </div>
+        </a>
+
+        <a href="#" class="product-card">
+          <div class="product-card__img-wrap">
+            <img src="_assets/IMG_8524.png" alt="Gold-Filled &amp; Pearl Rosary" loading="lazy">
+          </div>
+          <div class="product-card__body">
+            <h4 class="product-card__title">Gold-Filled &amp; Pearl</h4>
+            <p class="product-card__price">&#163;48.00</p>
+          </div>
+        </a>
+
+        <a href="#" class="product-card">
+          <div class="product-card__img-wrap">
+            <img src="_assets/IMG_8540.png" alt="Turquoise &amp; Silver Rosary" loading="lazy">
+          </div>
+          <div class="product-card__body">
+            <h4 class="product-card__title">Turquoise &amp; Silver</h4>
+            <p class="product-card__price">&#163;40.00</p>
+          </div>
+        </a>
+
+        <a href="#" class="product-card">
+          <div class="product-card__img-wrap">
+            <img src="_assets/IMG_8124-scaled.jpeg" alt="Ivory Freshwater Pearl Rosary" loading="lazy">
+          </div>
+          <div class="product-card__body">
+            <h4 class="product-card__title">Ivory Freshwater Pearl</h4>
+            <p class="product-card__price">&#163;55.00</p>
+          </div>
+        </a>
+
+        <a href="#" class="product-card">
+          <div class="product-card__img-wrap">
+            <img src="_assets/IMG_7759-scaled.jpeg" alt="Wire-Wrapped Crystal Rosary" loading="lazy">
+          </div>
+          <div class="product-card__body">
+            <h4 class="product-card__title">Wire-Wrapped Crystal</h4>
+            <p class="product-card__price">&#163;44.00</p>
+          </div>
+        </a>
+
+        <a href="#" class="product-card">
+          <div class="product-card__img-wrap">
+            <img src="_assets/IMG_8343.png" alt="Sky Blue Crystal Rosary" loading="lazy">
+          </div>
+          <div class="product-card__body">
+            <h4 class="product-card__title">Sky Blue Crystal</h4>
+            <p class="product-card__price">&#163;36.00</p>
+          </div>
+        </a>
+
+      </div><!-- /product-grid -->
+
+      <!-- Collection CTA -->
+      <div class="collection-cta reveal">
+        <div class="collection-cta__text">
+          <p class="collection-cta__quote">Each rosary tells a story.<br>I&#8217;d love to help you tell yours.</p>
+          <p class="collection-cta__sub">Every piece is made to order — no two are exactly alike.</p>
+        </div>
+        <a href="#" class="btn btn--primary collection-cta__btn">See the full collection</a>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ================================================
+       TESTIMONIAL / QUOTE SECTION
+  ================================================ -->
+  <section class="testimonial" aria-label="Testimonials" id="testimonial-slider">
+    <div class="testimonial__overlay" aria-hidden="true"></div>
+
+    <div class="testimonial__inner">
+
+      <!-- Slide 1 -->
+      <blockquote class="testimonial__slide is-active" aria-hidden="false">
+        <p class="testimonial__quote">&#8220;I was amazed by the quality of the handcrafted rosary beads from Rosaries by Anna. The intricate details and craftsmanship truly set them apart. As a devout Catholic, I appreciate the beauty and devotion that goes into each piece. Highly recommend for anyone looking for exquisite rosaries.&#8221;</p>
+        <footer class="testimonial__attr">&#8212; Sophia</footer>
+      </blockquote>
+
+      <!-- Slide 2 -->
+      <blockquote class="testimonial__slide" aria-hidden="true">
+        <p class="testimonial__quote">&#8220;I am so pleased with the beautiful rosary beads from Anna. I was amazed by the quality of the handcrafted rosary beads from Rosaries by Anna. The details and craftsmanship really set them apart. As a devout Catholic, I appreciate the beauty and devotion that goes into each piece.&#8221;</p>
+        <footer class="testimonial__attr">&#8212; James</footer>
+      </blockquote>
+
+      <!-- Slide 3 -->
+      <blockquote class="testimonial__slide" aria-hidden="true">
+        <p class="testimonial__quote">&#8220;The handcrafted rosary beads are truly a work of art and perfect for Catholics seeking a meaningful spiritual connection.&#8221;</p>
+        <footer class="testimonial__attr">&#8212; Olivia</footer>
+      </blockquote>
+
+      <!-- Dot navigation -->
+      <div class="testimonial__dots" role="tablist" aria-label="Testimonial navigation">
+        <button class="testimonial__dot is-active" role="tab" aria-selected="true"  aria-label="Slide 1"></button>
+        <button class="testimonial__dot"            role="tab" aria-selected="false" aria-label="Slide 2"></button>
+        <button class="testimonial__dot"            role="tab" aria-selected="false" aria-label="Slide 3"></button>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ================================================
+       ABOUT SECTION
+  ================================================ -->
+  <section class="about" id="about" aria-labelledby="about-headline">
+    <div class="container">
+      <div class="about__grid">
+
+        <!-- Portrait image with overlapping inset -->
+        <div class="about__image reveal">
+          <img src="_assets/carmelite-anna.jpeg" alt="Anna in her Carmelite habit">
+          <div class="about__image-inset">
+            <img src="_assets/anna-ellena.png" alt="Anna and Ellena">
+          </div>
+        </div>
+
+        <!-- Text column -->
+        <div class="about__text reveal">
+          <span class="section-label">The maker</span>
+          <h2 class="about__headline" id="about-headline">Hi, I&#8217;m Anna.</h2>
+
+          <p class="about__body">Some of you may know me as &#8216;Carmelite Anna&#8217; from Twitter &#8212; now known as X!</p>
+
+          <p class="about__body">There is a reason I have Carmelite in my handle. For 6.5 years I lived my life as a Carmelite nun tucked away in a monastery in York with 20 other likeminded women. It was a challenging life but one that led me deep into the Heart of Jesus and nurtured my faith in Him.</p>
+
+          <p class="about__body">Sadly at the age of 25, after six and a half years and before solemn profession, it became obvious I had to leave due to ill health. This was one of the hardest times in my life &#8212; but even now, over 30 years later...</p>
+
+          <a href="#" class="about__cta-link">Read my full story</a><br>
+          
+          <a href="#shop" class="about-shop-link btn btn--primary">Take a look at the shop</a>
+
+          <!-- Community sub-section — separated by short rule, not a heading -->
+          <hr class="about__rule">
+
+          <p class="about__community-text">My home on social media is Twitter, where I&#8217;ve built a wonderful community of fellow Catholics and rosary lovers. Every First Friday I run a giveaway &#8212; one of my rosaries, free, just for being part of the community. I&#8217;ve been doing it for nearly two years now and it brings me so much joy.</p>
+
+          <p class="about__community-text">Come and join us. It really is a lovely corner of the internet.</p>
+
+          <a href="https://twitter.com/CarmeliteAnna" class="about__twitter-link" target="_blank" rel="noopener noreferrer">
+            <!-- X / Twitter logo -->
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.73-8.835L1.254 2.25H8.08l4.263 5.633 5.901-5.633zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+            </svg>
+            Follow @CarmeliteAnna on X
+          </a>
+
+          <a href="mailto:anna@rosariesbyanna.com" class="about__email-link">anna@rosariesbyanna.com</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ================================================
+       FOOTER QUOTE SECTION
+  ================================================ -->
+  <section class="footer-quote" aria-label="Closing quote">
+    <div class="container">
+      <div class="footer-quote__inner reveal">
+        <hr class="footer-quote__ornament">
+        <p class="footer-quote__text">&#8220;"The Rosary is the most beautiful and the most rich in graces of all prayers;  it is the prayer that touches most the Heart of the Mother of God…. and if you wish peace to reign in your homes, recite the family rosary."&#8221;</p>
+        <p class="footer-quote__attr">&#8212; Pope Saint Pius X</p>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ================================================
+       FOOTER
+  ================================================ -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__inner">
+
+        <!-- Brand: logo left, tagline below -->
+        <div class="footer__brand">
+          <img src="_assets/rosariesbyannalogowhite.png" alt="Rosaries by Anna" class="footer__logo">
+          <p class="footer__tagline">Hand-crafted rosaries from the heart of England.</p>
+        </div>
+
+        <!-- Nav links: right-aligned -->
+        <nav class="footer__nav" aria-label="Footer navigation">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#">Blog</a>
+          <a href="#">Contact</a>
+        </nav>
+
+      </div>
+
+      <!-- Bottom bar -->
+      <div class="footer__bottom">
+        <p class="footer__copyright">&#169; 2024 Rosaries by Anna. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- ================================================
+       JAVASCRIPT
+  ================================================ -->
+  <script>
+    // ---- Nav: add .is-scrolled class on scroll ----
+    const nav = document.getElementById('site-nav');
+
+    function updateNav() {
+      if (window.scrollY > 20) {
+        nav.classList.add('is-scrolled');
+      } else {
+        nav.classList.remove('is-scrolled');
+      }
+    }
+
+    window.addEventListener('scroll', updateNav, { passive: true });
+    updateNav(); // Run once on page load
+
+
+    // ---- Mobile nav overlay ----
+    const hamburger    = document.getElementById('hamburger');
+    const navOverlay   = document.getElementById('nav-overlay');
+    const navClose     = document.getElementById('nav-close');
+
+    function openNav() {
+      navOverlay.classList.add('is-open');
+      navOverlay.setAttribute('aria-hidden', 'false');
+      hamburger.setAttribute('aria-expanded', 'true');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeNav() {
+      navOverlay.classList.remove('is-open');
+      navOverlay.setAttribute('aria-hidden', 'true');
+      hamburger.setAttribute('aria-expanded', 'false');
+      document.body.style.overflow = '';
+    }
+
+    hamburger.addEventListener('click', openNav);
+    navClose.addEventListener('click', closeNav);
+
+    // Close when a nav link is clicked
+    navOverlay.querySelectorAll('a').forEach(function(link) {
+      link.addEventListener('click', closeNav);
+    });
+
+    // Close on Escape key
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape' && navOverlay.classList.contains('is-open')) {
+        closeNav();
+      }
+    });
+
+
+    // ---- Scroll reveal (IntersectionObserver) ----
+    // Elements with class .reveal fade up as they enter the viewport.
+    var revealEls = document.querySelectorAll('.reveal');
+
+    var revealObserver = new IntersectionObserver(function(entries) {
+      entries.forEach(function(entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          revealObserver.unobserve(entry.target);
+        }
+      });
+    }, {
+      threshold: 0.08,
+      rootMargin: '0px 0px -40px 0px'
+    });
+
+    revealEls.forEach(function(el) {
+      revealObserver.observe(el);
+    });
+
+
+    // ---- Testimonial slider ----
+    (function() {
+      var slides = document.querySelectorAll('.testimonial__slide');
+      var dots   = document.querySelectorAll('.testimonial__dot');
+      var current = 0;
+      var autoplayTimer;
+      var AUTOPLAY_DELAY = 5000;
+
+      function goTo(index) {
+        // Deactivate current
+        slides[current].classList.remove('is-active');
+        slides[current].setAttribute('aria-hidden', 'true');
+        dots[current].classList.remove('is-active');
+        dots[current].setAttribute('aria-selected', 'false');
+
+        // Activate next
+        current = index;
+        slides[current].classList.add('is-active');
+        slides[current].setAttribute('aria-hidden', 'false');
+        dots[current].classList.add('is-active');
+        dots[current].setAttribute('aria-selected', 'true');
+      }
+
+      function next() {
+        goTo((current + 1) % slides.length);
+      }
+
+      function startAutoplay() {
+        autoplayTimer = setInterval(next, AUTOPLAY_DELAY);
+      }
+
+      function stopAutoplay() {
+        clearInterval(autoplayTimer);
+      }
+
+      // Dot click handlers
+      dots.forEach(function(dot, i) {
+        dot.addEventListener('click', function() {
+          stopAutoplay();
+          goTo(i);
+          startAutoplay(); // Restart timer after manual nav
+        });
+      });
+
+      // Pause on hover
+      var slider = document.getElementById('testimonial-slider');
+      slider.addEventListener('mouseenter', stopAutoplay);
+      slider.addEventListener('mouseleave', startAutoplay);
+
+      startAutoplay();
+    })();
+  </script>
+
 </body>
 </html>
