@@ -339,7 +339,7 @@ header {
   min-height: 95vh;
   display: flex;
   align-items: center;
-  background-image: url('_assets/hero.webp');
+  background-image: url('./assets/images/hero.webp');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: bottom center;
@@ -622,7 +622,7 @@ header {
 .testimonial {
   position: relative;
   padding: var(--space-10) 0;
-  background-image: url('_assets/Testimonial.jpg');
+  background-image: url('./assets/images/Testimonial.jpg');
   background-size: cover;
   background-position: center;
 }
