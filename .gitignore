@@ -1,0 +1,5 @@
+# Only track /site folder
+/*
+!.gitignore
+!.gitkeep
+!/site
